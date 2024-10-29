@@ -1,0 +1,27 @@
+.gallery {
+  position: relative;
+  top: -1rem;
+  margin: 0 auto;
+}
+.gallery #gallery1 {
+  background-image: url("/images/homepage/enjoyable-place-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+}
+.gallery #gallery2 {
+  background-image: url("/images/homepage/locally-sourced-desktop.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 40rem;
+}
+@media screen and (min-width: 48rem) {
+  .gallery {
+    position: relative;
+    top: 0rem;
+  }
+}
+
+/*# sourceMappingURL=gallery.css.map */

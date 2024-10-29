@@ -1,0 +1,25 @@
+.hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 10rem;
+}
+.hero .hero-info {
+  text-align: center;
+  width: 80%;
+}
+.hero .hero-info button {
+  margin-bottom: 2rem;
+}
+@media screen and (min-width: 48rem) {
+  .hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 3rem 0;
+  }
+}
+
+/*# sourceMappingURL=hero.css.map */

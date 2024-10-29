@@ -1,0 +1,20 @@
+@use "variables";
+@import "Mymixins";
+
+.gallery {
+  position: relative;
+  top: -1rem;
+  margin: 0 auto;
+  #gallery1 {
+    @include imgbg("/images/homepage/enjoyable-place-desktop.jpg");
+    height: 40rem;
+  }
+  #gallery2 {
+    @include imgbg("/images/homepage/locally-sourced-desktop.jpg");
+    height: 40rem;
+  }
+  @media screen and (min-width:48rem) {
+    position: relative;
+    top: 0rem;
+  }
+}

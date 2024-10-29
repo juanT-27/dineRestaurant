@@ -1,0 +1,15 @@
+.darkTheme {
+  background-color: #111111;
+  color: #ffffff;
+}
+.darkTheme button {
+  background-color: #242b37;
+  color: #ffffff;
+  width: 50%;
+}
+.darkTheme button:hover {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+/*# sourceMappingURL=utilities.css.map */

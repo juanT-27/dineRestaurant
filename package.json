@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "sass": "^1.80.4"
+  },
+  "name": "dine-restaurant-website",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
