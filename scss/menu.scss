@@ -39,16 +39,21 @@
         max-width: 20rem;
         .menu-productCard-img{
             width: 10rem;
+            height: 10rem;
         }
         p{
-            background-color: #fff;
             color: variables.$secondary-color3;
             padding: 0 0.5rem;
+            font-size: variables.$font-size-2;
         }
 
         .ingredients{
             list-style-type:square;
             padding: 0;
+        }
+
+        ul{
+            list-style-type: none;
         }
 
        }

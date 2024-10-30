@@ -63,7 +63,7 @@ img {
 
 li {
   font-family: "League Spartan", sans-serif;
-  font-size: clamp(0.6944rem, 0.5882rem + 0.5314vi, 1rem);
+  font-size: clamp(1rem, 0.8043rem + 0.9783vi, 1.5625rem);
   font-weight: 400;
 }
 

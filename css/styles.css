@@ -63,7 +63,7 @@ img {
 
 li {
   font-family: "League Spartan", sans-serif;
-  font-size: clamp(0.6944rem, 0.5882rem + 0.5314vi, 1rem);
+  font-size: clamp(1rem, 0.8043rem + 0.9783vi, 1.5625rem);
   font-weight: 400;
 }
 
@@ -116,7 +116,7 @@ li {
   margin: 0 auto;
 }
 .gallery #gallery1 {
-  background-image: url("/images/homepage/enjoyable-place-desktop.jpg");
+  background-image: url("https://images.pexels.com/photos/16945221/pexels-photo-16945221/free-photo-of-hombre-campo-flores-vehiculo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -189,15 +189,19 @@ li {
 }
 .menu .menu-options .menu-productCard .menu-productCard-img {
   width: 10rem;
+  height: 10rem;
 }
 .menu .menu-options .menu-productCard p {
-  background-color: #fff;
   color: #5c6779;
   padding: 0 0.5rem;
+  font-size: clamp(1.44rem, 1.0917rem + 1.7416vi, 2.4414rem);
 }
 .menu .menu-options .menu-productCard .ingredients {
   list-style-type: square;
   padding: 0;
+}
+.menu .menu-options .menu-productCard ul {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=styles.css.map */

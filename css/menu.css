@@ -51,15 +51,19 @@
 }
 .menu .menu-options .menu-productCard .menu-productCard-img {
   width: 10rem;
+  height: 10rem;
 }
 .menu .menu-options .menu-productCard p {
-  background-color: #fff;
   color: #5c6779;
   padding: 0 0.5rem;
+  font-size: clamp(1.44rem, 1.0917rem + 1.7416vi, 2.4414rem);
 }
 .menu .menu-options .menu-productCard .ingredients {
   list-style-type: square;
   padding: 0;
+}
+.menu .menu-options .menu-productCard ul {
+  list-style-type: none;
 }
 
 /*# sourceMappingURL=menu.css.map */
