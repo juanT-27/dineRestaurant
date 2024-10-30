@@ -34,7 +34,7 @@ h5 {
 
 p {
   font-family: "League Spartan", sans-serif;
-  font-size: clamp(1rem, 0.8043rem + 0.9783vi, 1.5625rem);
+  font-size: clamp(0.8333rem, 0.6884rem + 0.7246vi, 1.25rem);
   font-weight: 400;
 }
 
@@ -61,6 +61,12 @@ img {
   height: 100%;
 }
 
+li {
+  font-family: "League Spartan", sans-serif;
+  font-size: clamp(0.6944rem, 0.5882rem + 0.5314vi, 1rem);
+  font-weight: 400;
+}
+
 .darkTheme {
   background-color: #111111;
   color: #ffffff;
@@ -71,6 +77,11 @@ img {
   width: 50%;
 }
 .darkTheme button:hover {
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.btn-light {
   background-color: #ffffff;
   color: #111111;
 }
@@ -123,6 +134,54 @@ img {
     position: relative;
     top: 0rem;
   }
+}
+
+.menu {
+  padding: 5rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menu .menu-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.menu .menu-header h4 {
+  width: 80%;
+}
+.menu .menu-header p {
+  width: 60%;
+}
+.menu .menu-header ul {
+  margin: 0;
+  padding: 1rem 0;
+  list-style-type: none;
+  width: 60%;
+}
+.menu .menu-header ul li {
+  margin: 0.5rem 0;
+}
+.menu .menu-options {
+  gap: 1rem;
+}
+.menu .menu-options .menu-productCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid #fff;
+  border-radius: 3rem;
+  padding: 2rem 0;
+}
+.menu .menu-options .menu-productCard .menu-productCard-img {
+  width: 80%;
+}
+.menu .menu-options .menu-productCard .ingredients {
+  list-style-type: square;
+  padding: 0;
 }
 
 /*# sourceMappingURL=styles.css.map */

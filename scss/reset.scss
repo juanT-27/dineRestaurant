@@ -36,7 +36,7 @@ h5 {
 
 p {
   font-family: variables.$fontF;
-  font-size: variables.$font-size-0;
+  font-size: variables.$font-size--1;
   font-weight: 400;
 }
 
@@ -64,3 +64,8 @@ img{
   height: 100%;
 }
 
+li{
+  font-family: variables.$fontF;
+  font-size: variables.$font-size--2;
+  font-weight: 400;
+}
