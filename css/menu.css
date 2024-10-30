@@ -1,5 +1,6 @@
 .menu {
   padding: 5rem 0;
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -11,11 +12,13 @@
   align-items: center;
   flex-direction: column;
 }
-.menu .menu-header h4 {
+.menu .menu-header h5 {
   width: 80%;
 }
 .menu .menu-header p {
   width: 60%;
+  background-color: #9e7f66;
+  color: #fff;
 }
 .menu .menu-header ul {
   margin: 0;
@@ -28,6 +31,12 @@
 }
 .menu .menu-options {
   gap: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
 }
 .menu .menu-options .menu-productCard {
   display: flex;
@@ -36,10 +45,17 @@
   flex-direction: column;
   border: 1px solid #fff;
   border-radius: 3rem;
-  padding: 2rem 0;
+  padding: 2rem;
+  width: 20rem;
+  max-width: 20rem;
 }
 .menu .menu-options .menu-productCard .menu-productCard-img {
-  width: 80%;
+  width: 10rem;
+}
+.menu .menu-options .menu-productCard p {
+  background-color: #fff;
+  color: #5c6779;
+  padding: 0 0.5rem;
 }
 .menu .menu-options .menu-productCard .ingredients {
   list-style-type: square;

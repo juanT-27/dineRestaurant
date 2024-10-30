@@ -51,9 +51,7 @@
       </section>
       <section class="container gallery row">
         <div class="col-12 col-md-6 gallery-img" id="gallery1"></div>
-        <div
-          class="col-12 col-md-6 gallery-text text-center d-flex justify-content-center align-items-center flex-column"
-        >
+        <div class="col-12 col-md-6 gallery-text text-center d-flex justify-content-center align-items-center flex-column">
           <h2>
             Enjoyable place <br />
             for all the family
@@ -63,7 +61,7 @@
             everyone. We can even arrange a tour of the farm before your meal.
           </p>
         </div>
-        <div class="col-12 col-md-6 gallery-text">
+        <div class="col-12 col-md-6 gallery-text text-center d-flex justify-content-center align-items-center flex-column">
           <h2>The most locally <br />sourced food</h2>
           <p>
             All our ingredients come directly from our farm or local fishery. So
@@ -80,27 +78,24 @@
             We cater for all dietary requirements, but here’s a glimpse at some
             of our diner’s favourites. Our menu is revamped every season.
           </p>
-          <ul class="text-center">
+          <ul class="text-center" id="menuSectionsBtns">
             <li class="btn btn-light" id="appetizer">appetizer</li>
             <li class="btn btn-light" id="main">Main</li>
-            <li class="btn btn-light" id="desserts">desserts</li>
+            <li class="btn btn-light" id="dessert">desserts</li>
           </ul>
         </div>
-        <div class="menu-options row col-12 col-md-6 justify-content-center">
-          
+        <div class="menu-options  col-12 col-md-6 justify-content-center">
           <template id="productCard">
-            <div class="menu-productCard col-12 col-md-4">
+            <div class="menu-productCard ">
             <div class="menu-productCard-img">
-              <img src="/images/homepage/beef-desktop-tablet.jpg" alt="" />
+              <img src="" alt="" />
             </div>
-            <h5>Beef</h5>
+            <p id="title">Beef</p>
             <p>Ingredients:</p>
-            <ul class="ingredients text-center">
-              <li>beef</li>
-              <li>salt</li>
+            <ul class=" text-center" id="ingredients">
             </ul>
-            <p>$10,50</p>
-              <button>Order</button>
+            <p id="price">$10,50</p>
+              <button id="orderBtn">Order</button>
             </div>
         </template>
         </div>
