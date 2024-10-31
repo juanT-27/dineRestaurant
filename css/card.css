@@ -1,0 +1,18 @@
+#smallBanner .card-body {
+  background-color: #242b37;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#smallBanner .card-body h1 {
+  text-align: center;
+}
+#smallBanner .card-body button {
+  background-color: #9e7f66;
+  color: #fff;
+  width: 50%;
+}
+
+/*# sourceMappingURL=card.css.map */

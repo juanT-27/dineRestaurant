@@ -29,6 +29,36 @@
     <title>Dine Website Challenge</title>
   </head>
   <body>
+    <div class="modal " tabindex="1" id="reservations">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">reservations</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form action="">
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Month</span>
+                <input type="number" class="form-control" placeholder="01" aria-label="month" aria-describedby="addon-wrapping">
+              </div>
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">day</span>
+                <input type="number" class="form-control" placeholder="27" aria-label="day" aria-describedby="addon-wrapping" maxlength="31">
+              </div>
+              <div class="input-group flex-nowrap">
+                <span class="input-group-text" id="addon-wrapping">Year</span>
+                <input type="number" class="form-control" placeholder="2025" aria-label="day" aria-describedby="addon-wrapping" maxlength="31">
+              </div>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
     <main
       class="container-fluid d-flex justify-content-center align-items-center flex-column"
     >
@@ -46,7 +76,7 @@
             Experience our seasonal menu in beautiful country surroundings. Eat
             the freshest produce from the comfort of our farmhouse.
           </p>
-          <button>Book a table</button>
+          <button id="bookTable"  data-bs-toggle="modal" data-bs-target="#reservations">Book a table</button>
         </div>
       </section>
       <section class="container gallery row">
@@ -101,7 +131,15 @@
         </div>
       </section>
 
-      
+      <div class="card container-fluid" id="smallBanner">
+        <div class="mask">
+          <div class="card-body ">
+            <h1>Want to visit us</h1>
+            <button data-bs-toggle="modal" data-bs-target="#reservations">Book a table </button>
+          </div>
+        </div>
+        
+      </div>
       
     </main>
     <script

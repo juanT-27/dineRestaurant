@@ -24,10 +24,10 @@
   margin: 0;
   padding: 1rem 0;
   list-style-type: none;
-  width: 60%;
+  width: 100%;
 }
 .menu .menu-header ul li {
-  margin: 0.5rem 0;
+  margin: 0.5rem 2rem;
 }
 .menu .menu-options {
   gap: 1rem;
@@ -48,9 +48,10 @@
   padding: 2rem;
   width: 20rem;
   max-width: 20rem;
+  text-align: center;
 }
 .menu .menu-options .menu-productCard .menu-productCard-img {
-  width: 10rem;
+  width: 100%;
   height: 10rem;
 }
 .menu .menu-options .menu-productCard p {
@@ -64,6 +65,9 @@
 }
 .menu .menu-options .menu-productCard ul {
   list-style-type: none;
+}
+.menu .menu-options .menu-productCard ul li {
+  text-align: start;
 }
 
 /*# sourceMappingURL=menu.css.map */

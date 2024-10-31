@@ -1,0 +1,19 @@
+@use "variables";
+@import "Mymixins";
+
+#smallBanner{
+    .card-body{
+        background-color: variables.$secondary-color2;
+        color: #fff;
+        @include flexDirection(column, center, center);
+        h1{
+            text-align: center;
+        }
+        button{
+            background-color: variables.$color-primary2;
+            color: #fff;
+            width: 50%;
+        }
+    }
+
+}

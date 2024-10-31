@@ -42,6 +42,7 @@ button {
   font-family: "League Spartan", sans-serif;
   font-size: clamp(0.8333rem, 0.6884rem + 0.7246vi, 1.25rem);
   font-weight: 300;
+  padding: 1rem;
 }
 
 input {
@@ -120,23 +121,33 @@ li {
   margin: 0 auto;
 }
 .gallery #gallery1 {
-  background-image: url("https://images.pexels.com/photos/16945221/pexels-photo-16945221/free-photo-of-hombre-campo-flores-vehiculo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/16945221/pexels-photo-16945221/free-photo-of-hombre-campo-flores-vehiculo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40rem;
+  height: 20rem;
 }
 .gallery #gallery2 {
-  background-image: url("/images/homepage/locally-sourced-desktop.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/1268101/pexels-photo-1268101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40rem;
+  height: 20rem;
 }
 @media screen and (min-width: 48rem) {
   .gallery {
     position: relative;
     top: 0rem;
+  }
+  .gallery #gallery1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/16945221/pexels-photo-16945221/free-photo-of-hombre-campo-flores-vehiculo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+  }
+  .gallery #gallery2 {
+    height: 40rem;
   }
 }
 
@@ -166,10 +177,10 @@ li {
   margin: 0;
   padding: 1rem 0;
   list-style-type: none;
-  width: 60%;
+  width: 100%;
 }
 .menu .menu-header ul li {
-  margin: 0.5rem 0;
+  margin: 0.5rem 2rem;
 }
 .menu .menu-options {
   gap: 1rem;
@@ -190,9 +201,10 @@ li {
   padding: 2rem;
   width: 20rem;
   max-width: 20rem;
+  text-align: center;
 }
 .menu .menu-options .menu-productCard .menu-productCard-img {
-  width: 10rem;
+  width: 100%;
   height: 10rem;
 }
 .menu .menu-options .menu-productCard p {
@@ -206,6 +218,39 @@ li {
 }
 .menu .menu-options .menu-productCard ul {
   list-style-type: none;
+}
+.menu .menu-options .menu-productCard ul li {
+  text-align: start;
+}
+
+#smallBanner .card-body {
+  background-color: #242b37;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+#smallBanner .card-body h1 {
+  text-align: center;
+}
+#smallBanner .card-body button {
+  background-color: #9e7f66;
+  color: #fff;
+  width: 50%;
+}
+
+.modal {
+  top: 30vh;
+}
+.modal .modal-header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://plus.unsplash.com/premium_photo-1665203630695-1db105e4ea9d?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  color: #fff;
+  height: 20vh;
 }
 
 /*# sourceMappingURL=styles.css.map */

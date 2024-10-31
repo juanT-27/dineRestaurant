@@ -8,7 +8,8 @@ const menuItems = [
     id: 1,
     type: "appetizer",
     name: "Bruschetta",
-    imageUrl: "https://cdn.pixabay.com/photo/2022/12/30/11/17/bruschetta-7686666_1280.jpg",
+    imageUrl:
+      "https://cdn.pixabay.com/photo/2022/12/30/11/17/bruschetta-7686666_1280.jpg",
     ingredients: [
       "baguette",
       "tomato",
@@ -23,7 +24,8 @@ const menuItems = [
     id: 2,
     type: "appetizer",
     name: "Stuffed Mushrooms",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm-CHBj3beZcvH6Wea5N8JLd_DKyI_yZagDA&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSm-CHBj3beZcvH6Wea5N8JLd_DKyI_yZagDA&s",
     ingredients: [
       "mushrooms",
       "cream cheese",
@@ -37,7 +39,8 @@ const menuItems = [
     id: 3,
     type: "appetizer",
     name: "Garlic Bread",
-    imageUrl: "https://www.foodandwine.com/thmb/e2WjcjuE8G9BmDJ9ufF1twmpdsg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/pull-apart-garlic-rosemary-bread-FT-RECIPE0821-044f9c58dc274962b299d8ca21258635.jpg",
+    imageUrl:
+      "https://www.foodandwine.com/thmb/e2WjcjuE8G9BmDJ9ufF1twmpdsg=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/pull-apart-garlic-rosemary-bread-FT-RECIPE0821-044f9c58dc274962b299d8ca21258635.jpg",
     ingredients: ["baguette", "garlic", "butter", "parsley", "parmesan cheese"],
     price: 4.99,
   },
@@ -47,7 +50,8 @@ const menuItems = [
     id: 4,
     type: "main",
     name: "Spaghetti Bolognese",
-    imageUrl: "https://cdn.pixabay.com/photo/2022/10/12/22/09/spaghetti-bolognese-7517639_1280.jpg",
+    imageUrl:
+      "https://cdn.pixabay.com/photo/2022/10/12/22/09/spaghetti-bolognese-7517639_1280.jpg",
     ingredients: [
       "spaghetti",
       "ground beef",
@@ -62,7 +66,8 @@ const menuItems = [
     id: 5,
     type: "main",
     name: "Grilled Chicken Salad",
-    imageUrl: "https://spicecravings.com/wp-content/uploads/2022/05/Strawberry-Spinach-Salad-Featured.jpg",
+    imageUrl:
+      "https://spicecravings.com/wp-content/uploads/2022/05/Strawberry-Spinach-Salad-Featured.jpg",
     ingredients: [
       "grilled chicken",
       "mixed greens",
@@ -77,7 +82,8 @@ const menuItems = [
     id: 6,
     type: "main",
     name: "Margherita Pizza",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh7-18uhQBshQdfFRgRRciaLghKoajjI9A3g&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTh7-18uhQBshQdfFRgRRciaLghKoajjI9A3g&s",
     ingredients: [
       "pizza dough",
       "tomato sauce",
@@ -93,7 +99,8 @@ const menuItems = [
     id: 7,
     type: "dessert",
     name: "Chocolate Lava Cake",
-    imageUrl: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6DyL6adtGeNqeEDCl8svqfp8AddmunlOmpA&s",
+    imageUrl:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6DyL6adtGeNqeEDCl8svqfp8AddmunlOmpA&s",
     ingredients: [
       "chocolate",
       "butter",
@@ -108,7 +115,8 @@ const menuItems = [
     id: 8,
     type: "dessert",
     name: "Cheesecake",
-    imageUrl: "https://sugarspunrun.com/wp-content/uploads/2019/01/Best-Cheesecake-Recipe-2-1-of-1-4.jpg",
+    imageUrl:
+      "https://sugarspunrun.com/wp-content/uploads/2019/01/Best-Cheesecake-Recipe-2-1-of-1-4.jpg",
     ingredients: [
       "cream cheese",
       "sugar",
@@ -123,7 +131,8 @@ const menuItems = [
     id: 9,
     type: "dessert",
     name: "Tiramisu",
-    imageUrl: "https://cdn.pixabay.com/photo/2023/05/17/11/04/ai-generated-7999820_1280.jpg",
+    imageUrl:
+      "https://cdn.pixabay.com/photo/2023/05/17/11/04/ai-generated-7999820_1280.jpg",
     ingredients: [
       "mascarpone cheese",
       "espresso",
@@ -141,30 +150,30 @@ let menuSectionActive = "appetizer";
 sectionBtns.addEventListener("click", (e) => {
   let element = e.target;
   let elementId = element.getAttribute("id");
-  if(elementId === "menuSectionsBtns"){
+  if (elementId === "menuSectionsBtns") {
     return false;
-   }
+  }
   menuSectionActive = elementId;
-  
+
   showMenu(menuSectionActive);
 });
 
 const showMenu = (section) => {
-  productsContainer.innerHTML= ""
+  productsContainer.innerHTML = "";
   menuItems.forEach((dish) => {
     if (dish.type === section) {
       let clone = document.importNode(productTemplate, true).content;
       clone.querySelector("#title").innerText = dish.name;
-      clone.querySelector("img").setAttribute("src", dish.imageUrl)
+      clone.querySelector("img").setAttribute("src", dish.imageUrl);
       let list = clone.querySelector("#ingredients");
-      dish.ingredients.forEach(item => {
+      dish.ingredients.forEach((item) => {
         let li = document.createElement("li");
-        li.innerHTML= item;
-        list.appendChild(li)
+        li.innerHTML = item;
+        list.appendChild(li);
       });
-      clone.querySelector("#price").innerText= `$${dish.price}`;
-      productsContainer.appendChild(clone)
-   };
+      clone.querySelector("#price").innerText = `$${dish.price}`;
+      productsContainer.appendChild(clone);
+    }
   });
 };
 

@@ -4,23 +4,33 @@
   margin: 0 auto;
 }
 .gallery #gallery1 {
-  background-image: url("https://images.pexels.com/photos/16945221/pexels-photo-16945221/free-photo-of-hombre-campo-flores-vehiculo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/16945221/pexels-photo-16945221/free-photo-of-hombre-campo-flores-vehiculo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40rem;
+  height: 20rem;
 }
 .gallery #gallery2 {
-  background-image: url("/images/homepage/locally-sourced-desktop.jpg");
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/1268101/pexels-photo-1268101.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 40rem;
+  height: 20rem;
 }
 @media screen and (min-width: 48rem) {
   .gallery {
     position: relative;
     top: 0rem;
+  }
+  .gallery #gallery1 {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/16945221/pexels-photo-16945221/free-photo-of-hombre-campo-flores-vehiculo.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 40rem;
+  }
+  .gallery #gallery2 {
+    height: 40rem;
   }
 }
 
