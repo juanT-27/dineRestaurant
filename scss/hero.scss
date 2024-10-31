@@ -1,17 +1,24 @@
 @use "variables";
 @import "Mymixins";
 .hero{
- @include flexDirection(column, center, center);
+ @include flexDirection(column, space-around, center);
  padding-bottom: 10rem;
+
     .hero-info{
         text-align: center;
-        width: 80%;
+        p{
+            width: 50%;
+            margin: 1rem auto;
+            text-align: center;
+            
+        }
         button{
             margin-bottom: 2rem;
         }
+        
     }
     @media screen and (min-width:48rem) {
         @include flexDirection(row,center,center);
-        padding: 3rem 0;
+        padding: 1rem 0;
     }
 }

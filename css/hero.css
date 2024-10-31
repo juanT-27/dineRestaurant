@@ -1,13 +1,17 @@
 .hero {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   flex-direction: column;
   padding-bottom: 10rem;
 }
 .hero .hero-info {
   text-align: center;
-  width: 80%;
+}
+.hero .hero-info p {
+  width: 50%;
+  margin: 1rem auto;
+  text-align: center;
 }
 .hero .hero-info button {
   margin-bottom: 2rem;
@@ -18,7 +22,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    padding: 3rem 0;
+    padding: 1rem 0;
   }
 }
 

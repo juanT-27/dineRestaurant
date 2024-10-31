@@ -141,7 +141,11 @@ let menuSectionActive = "appetizer";
 sectionBtns.addEventListener("click", (e) => {
   let element = e.target;
   let elementId = element.getAttribute("id");
+  if(elementId === "menuSectionsBtns"){
+    return false;
+   }
   menuSectionActive = elementId;
+  
   showMenu(menuSectionActive);
 });
 
